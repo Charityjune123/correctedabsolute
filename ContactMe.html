@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page Layout</title>
+    <link href = "styles.css" rel = "stylesheet">
+   
+</head>
+<header>
+    <div class="container">
+        <h1>CONTACT PAGE</h1>
+        <img src="contact.jpg".png" alt="contact page">
+      </div>
+</header>
+<!-- Menu Navigation Bar -->
+ <nav>
+    <nav class="menu">
+        <a href="index.html">HOME</a>
+        <a href="BatonRouge.html">Baton Rouge</a>
+        <a href="shreveport.html">Shreveport </a> 
+	<a href="NewOrleans.html">
+            New Orleans </a>
+            <a href="ContactMe.html">Contact Page</a>
+    </nav>
+<!--aside section-->
+<aside>
+
+    <h3>Reach out on Social Media</h3>
+
+         <p>Reach out to us on 
+            <a href="https://twitter.com/CharityJH" target="_blank">Twitter</a></br> or at
+            <a href="mailto:charityjune123@email.com" target="_blank">charityjune123@email.com</a>
+         </p>
+     <style>
+        aside{
+            height:fit-content; 
+        }
+     </style>
+</aside>
+<body>  
+    <form class="theForm">
+        <p> <h1>Connect with Us!</h1></p>
+        <input type="text" id="name" class="fields" name="firstname" placeholder="FirstName"></br>
+        <input type="text" id="lastname" class="fields" name="lastname" placeholder="LastName"></br>
+        <input type="text" id="email1" class="fields" name="email" placeholder="Email Address"></br>
+        <input type="text" id="email2" class="fields" placeholder="Confirm Email Address"></br>
+        <textarea id="question" rows = "4" cols="47" placeholder="Please enter a question and we will get back within 24 hours."></textarea></br>
+        <input id="submit" type="button" onclick="verify()" value="Submit">
+     </form>
+     <script>
+     function verify()
+   {
+   if(document.getElementById("email1").value === document.getElementById("email2").value) {
+   
+       alert("matched")
+   
+   } else {
+      document.getElementById("submit").setAttribute("disabled", "disabled");
+      alert("not matched")
+     }
+   
+   }
+   
+     </script>
+    <!-- Footer Section -->
+    <footer>
+</footer>
+</body>
+</html> 
